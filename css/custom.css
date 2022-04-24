@@ -1,0 +1,11 @@
+#site-head {
+  color: #1b1676;
+}
+
+a.fn-item.active {
+    color: #1b1676;
+}
+
+a.btn {
+  background-color: #e62238;
+}
