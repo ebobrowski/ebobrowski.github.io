@@ -465,7 +465,17 @@ ul li {
       ========================================================================== */
 
 /* Big cover image on the home page */
-
+#site-head {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0rem;
+  text-align: center;
+  color: #fff;
+  background: #b80135 no-repeat center center;
+  background-size: cover;
+}
 
 #site-head:after {
 }
