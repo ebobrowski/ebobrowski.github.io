@@ -41,7 +41,12 @@
 <meta itemprop="name" content="">
 <meta itemprop="description" content="Recycling attitudes and behaviors in New York City">
 
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.0.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.3.0.min.js" crossorigin="anonymous"></script> 
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.3.0.min.js" crossorigin="anonymous"></script> 
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-api-2.3.0.min.js" crossorigin="anonymous"></script> 
 <style>
+     
      #site-head {
           color: #1b1676;
 }
@@ -102,10 +107,6 @@
             
                  <a class='btn site-menu' data-title-anchor='introduction'>Introduction</a>
             
-                 <a class='btn site-menu' data-title-anchor='data-sources'>Data sources</a>
-            
-                 <a class='btn site-menu' data-title-anchor='about-me'>About Me</a>
-            
                  <a class='btn site-menu' data-title-anchor='explainer-notebook'>Explainer notebook </a>
             
             <i id='header-arrow' class="fa fa-angle-down"></i>
@@ -127,8 +128,11 @@
 <p>This project aims to determine how much waste New York City (NYC) residents recycle and whether recycling varies among different districts in NYC. If a difference does exist, we hope to uncover possible explanations for it. These differences may be explained by socioeconomic factors such as income and educational attainment. It&rsquo;s possible that the amount of recycling in each district might also be affected by the sheer number of public recycling bins in each district or the distance from a recycling bin in each district.</p>
 <h4 id="motivation">Motivation</h4>
 <p>Considering that recycling levels differ among different districts in New York City, it would be very interesting to learn the reasons/explanations behind these differences. Understanding why recycling is successful in some areas and unsuccessful in others may inspire new initiatives to promote recycling in New York City. In addition to being great for the environment, it would also benefit NYC&rsquo;s residents (recycling reduces pollution, conserves energy, reduces the need for new raw materials, and keeps trash out of landfills).</p>
-<p>Possibly the gained knowledge could be applied to other cities in the US and/or around the world. This project would mostly affect UN SDGs 11 and 12 in a positive way.
-Nulla aliquet, nisl pulvinar fermentum ultricies, turpis purus ultricies</p>
+<p>Possibly the gained knowledge could be applied to other cities in the US and/or around the world. This project would mostly affect UN SDGs 11 and 12 in a positive way.</p>
+<p>Below is a video that summarizes our project idea:</p>
+<iframe width="100%" height="500"
+src="https://www.youtube.com/ul26sZWu4Po">
+</iframe>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
@@ -144,29 +148,15 @@ Nulla aliquet, nisl pulvinar fermentum ultricies, turpis purus ultricies</p>
         </div>
     
         <div class='post-holder'>
-            <article id='data-sources' class='post  '>
+            <article id='recycling-behavior' class='post  '>
                 <header class="post-header">
-                    <h2 class="post-title">Data sources</h2>
+                    <h2 class="post-title">Recycling behavior</h2>
                 </header>
                 <section class="post-content">
-                    <p>The data set was mainly gathered from two different categories: Recycling Rate and Social-demographic data.</p>
-<p>Recycling Diversion and Capture Rates data-set was obtained from Department of Sanitation. The data about population statistics as well as detailed social, economic and housing information were obtained from the NYC Department of City Planning.</p>
-<hr>
+                    <p>Citywide, recycling rates are XXX on average.</p>
+<p>A map below shows the recycling rates in New York City. The bin location legend provides information about the nearest recycling bin. These numbers, however, vary greatly from district to district. The information about the particular bin can be seen by hovering over it, and the colour intensity indicates the recycling rate value.</p>
 <iframe width="100%" height="500" frameborder="0" scrolling="no" src="//plotly.com/~eliasbobrowski/5.embed"></iframe>
-<h2 id="nutrition-coaching">Nutrition Coaching</h2>
-<p>This is not an easy task. You will likely have to pay money for this. You know what - let us look at a nice picture first.</p>
-<p><img src="images/selective-focus-photography-of-pasta-with-tomato-and-basil-1279330.jpg" alt="Nice picture to make you pay me ;-)"></p>
-<p>Wow. That was nice, right? Well, call me and let us talk.</p>
-<hr>
-<h2 id="chef-consulting">Chef Consulting</h2>
-<p>Did you see the picture above? I can show you how to go from</p>
-<p><img src="images/board-bunch-cooking-food-349609.jpg" alt="Let us get started on a clean slate"></p>
-<p>to</p>
-<p><img src="images/woman-pouring-juice-on-glass-3184192.jpg" alt="Let us get started on a clean slate"></p>
-<p>in estimated seconds.</p>
-<hr>
-<p>Want to learn more about my services?</p>
-<p>Check out <a href="services">this page</a> I created. It carries a lot more details&hellip;</p>
+<h2 id="observation----">Observation: &mdash;</h2>
 
                 </section>
             </article>
@@ -174,15 +164,63 @@ Nulla aliquet, nisl pulvinar fermentum ultricies, turpis purus ultricies</p>
         </div>
     
         <div class='post-holder'>
-            <article id='about-me' class='post  '>
+            <article id='socioeconomic-factors' class='post  '>
                 <header class="post-header">
-                    <h2 class="post-title">About Me</h2>
+                    <h2 class="post-title">Socioeconomic factors</h2>
                 </header>
                 <section class="post-content">
-                    <p><img src="images/happy-ethnic-woman-sitting-at-table-with-laptop-3769021.jpg" alt="Jane Doe"></p>
-<h5 id="professionel-experience">Professionel Experience</h5>
-<p>A lot, but let us get into the details with some lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat lectus et magna placerat tincidunt. Nullam sit amet lectus vitae elit mollis rhoncus non eget lorem. Ut tempor sed dui quis volutpat.</p>
-<p>In ultrices, est at lobortis pretium, magna quam mollis neque, id viverra odio est sit amet lorem. Mauris efficitur nunc vel lectus porttitor, sit amet sodales quam eleifend. Duis et felis ut mauris dignissim efficitur. Aliquam non sem eros. Integer elit ante, bibendum id hendrerit vitae, vestibulum eget risus. Nunc efficitur nisl in iaculis vestibulum.</p>
+                    <p>Do socioeconomic factors also differ across neighborhoods when it comes to people&rsquo;s recycling behavior? The map below illustrates some socioeconomic factors in NYC neighbourhoods.</p>
+<p><a href="plots/socio_economic_map.html">plot</a></p>
+
+                </section>
+            </article>
+            <div class='post-after'></div>
+        </div>
+    
+        <div class='post-holder'>
+            <article id='recycling-behavior-and-socioeconomic-factors' class='post  '>
+                <header class="post-header">
+                    <h2 class="post-title">Recycling behavior and socioeconomic factors</h2>
+                </header>
+                <section class="post-content">
+                    <p>The data set was mainly gathered from two different categories: Recycling Rate and Social-demographic data.</p>
+<p>Recycling Diversion and Capture Rates data-set was obtained from Department of Sanitation. The data about population statistics as well as detailed social, economic and housing information were obtained from the NYC Department of City Planning.</p>
+
+                </section>
+            </article>
+            <div class='post-after'></div>
+        </div>
+    
+        <div class='post-holder'>
+            <article id='predicting-recycling-rate' class='post  '>
+                <header class="post-header">
+                    <h2 class="post-title">Predicting recycling rate</h2>
+                </header>
+                <section class="post-content">
+                    <p>What is the impact of socioeconomic factors on recycling behavior? Our regression model was trained to answer this question. According to the model, the following factors were significant for the prediction:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Variable</strong></th>
+<th><strong>Coefficient</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Intercept</td>
+<td>100</td>
+</tr>
+<tr>
+<td style="text-align:left">Percentage of</td>
+<td>-20</td>
+</tr>
+<tr>
+<td style="text-align:left">Percentage of</td>
+<td>40</td>
+</tr>
+</tbody>
+</table>
+<p>Coefficients for Regression Model</p>
 
                 </section>
             </article>
